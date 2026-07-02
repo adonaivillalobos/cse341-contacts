@@ -3,3 +3,30 @@ GET http://localhost:8080/contacts
 
 ### Get single contact by ID
 GET http://localhost:8080/contacts/6a4163a52251a3e9bfdb4bf4
+
+### Create a new contact
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Maria",
+  "lastName": "Lopez",
+  "email": "maria.lopez@email.com",
+  "favoriteColor": "purple",
+  "birthday": "1992-05-18"
+}
+
+### Update a contact
+PUT http://localhost:8080/contacts/6a4163a52251a3e9bfdb4bf4
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.updated@email.com",
+  "favoriteColor": "green",
+  "birthday": "1990-01-15"
+}
+
+### Delete a contact
+DELETE http://localhost:8080/contacts/6a4163a52251a3e9bfdb4bf4
