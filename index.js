@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const { connectDB } = require('./db');
-const contactsRouter = require('./contacts');
+const contactsRouter = require('./routes/contacts');
 
 const app = express();
 const port = 8080;
